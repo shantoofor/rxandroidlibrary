@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="rx_edit_text_padding_left">6dp</dimen>
+    <dimen name="rx_edit_text_height">30dp</dimen>
+    <dimen name="rx_text_default_size">20sp</dimen>
+
+</resources>

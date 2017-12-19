@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent">
+
+    <FrameLayout
+        android:id="@+id/navigation"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:contentDescription="@string/app_name"
+            android:id="@+id/m_navigation_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/m_navigation_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Text_Default"
+            android:visibility="gone"/>
+    </FrameLayout>
+
+    <!--<ImageButton
+        android:clickable="true"
+        android:id="@+id/toolbar_navigation_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:visibility="visible" />-->
+
+    <!--搜索框样式-->
+    <!-- <EditText
+         android:id="@+id/toolbar_search_view"
+         android:layout_width="wrap_content"
+         android:layout_height="match_parent"
+         android:layout_centerInParent="true"
+         android:layout_centerVertical="true"
+         android:layout_toRightOf="@+id/toolbar_navigation_icon"
+         android:background="@null"
+         android:drawableLeft="@mipmap/ic_rx_widget_search"
+         android:hint="请输入搜索内容"
+         android:maxLines="1"
+         android:textColor="#ffaaff"
+         android:textColorHint="#686868"
+         android:textCursorDrawable="@null"
+         android:textSize="14sp"
+         android:visibility="gone" />-->
+
+    <EditText
+        android:id="@+id/toolbar_search_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/rx_edit_text_height"
+        android:layout_toRightOf="@+id/navigation"
+        android:layout_toEndOf="@+id/navigation"
+        android:layout_toLeftOf="@+id/right_button"
+        android:layout_toStartOf="@+id/right_button"
+        android:background="@drawable/selector_search_view"
+        android:drawableLeft="@mipmap/ic_rx_widget_search"
+        android:drawableStart="@mipmap/ic_rx_widget_search"
+        android:drawablePadding="6dp"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        android:paddingLeft="@dimen/rx_edit_text_padding_left"
+        android:maxLines="1"
+        android:layout_centerVertical="true"
+        android:hint="@string/rx_search_view_hint"
+        android:textColor="#777777"
+        android:textColorHint="#777777"
+        android:textSize="14sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/toolbar_title"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_toRightOf="@+id/navigation"
+        android:layout_toEndOf="@+id/navigation"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="@color/rxColorTextDefault"
+        android:textSize="@dimen/rx_text_default_size"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:id="@+id/right_button"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:contentDescription="@string/app_name"
+            android:id="@+id/right_button_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/right_button_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Text_Default"
+            android:visibility="gone"/>
+    </FrameLayout>
+</RelativeLayout>

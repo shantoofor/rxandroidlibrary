@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="WidgetBar">
+            <attr name="rx_navigation_icon" format="reference" /> <!--TooBar左侧图标导航-->
+            <attr name="rx_navigation_text" format="reference" /> <!--TooBar左侧文字导航-->
+            <attr name="rx_right_button_icon" format="reference" /> <!--TooBar右侧图标导航-->
+            <attr name="rx_right_button_text" format="string" /> <!--TooBar右侧文字导航-->
+            <attr name="rx_title_text_size" format="dimension" /> <!--TooBar标题文字大小导航-->
+            <attr name="rx_show_search_view" format="boolean" /> <!--TooBar是否显示搜索框-->
+    </declare-styleable>
+
+    <declare-styleable name="SelectorImageView">
+        <attr name="rx_selected_src" format="reference" />
+        <attr name="rx_checked" format="boolean" />
+    </declare-styleable>
+</resources>
