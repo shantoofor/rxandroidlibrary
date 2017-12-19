@@ -13,14 +13,14 @@
         android:layout_height="wrap_content">
 
         <ImageView
+            android:id="@+id/rx_navigation_icon"
             android:contentDescription="@string/app_name"
-            android:id="@+id/m_navigation_icon"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:visibility="gone" />
 
         <TextView
-            android:id="@+id/m_navigation_text"
+            android:id="@+id/rx_navigation_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             style="@style/Text_Default"

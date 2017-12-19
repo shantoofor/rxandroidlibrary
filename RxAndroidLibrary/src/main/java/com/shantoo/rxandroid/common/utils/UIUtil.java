@@ -5,6 +5,7 @@ import android.support.annotation.LayoutRes;
 import android.support.v4.content.ContextCompat;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.Toast;
 
 import com.shantoo.rxandroid.RxAndroid;
@@ -63,5 +64,21 @@ public class UIUtil {
     public static int px2dip(float pxValue) {
         float scale = getContext().getResources().getDisplayMetrics().density;
         return (int) (pxValue / scale + 0.5f);
+    }
+
+    /**
+     * 得到屏幕的高
+     */
+    public static int getScreenHeight() {
+        int height = ManagerUtil.getWindowManager().getDefaultDisplay().getHeight();
+        return height;
+    }
+
+    /**
+     * 得到屏幕的宽
+     */
+    public static int getScreenWidth() {
+        int width = ManagerUtil.getWindowManager().getDefaultDisplay().getWidth();
+        return width;
     }
 }
