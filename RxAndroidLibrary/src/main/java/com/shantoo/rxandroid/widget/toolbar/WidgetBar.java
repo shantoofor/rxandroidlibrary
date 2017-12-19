@@ -20,6 +20,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.shantoo.rxandroid.R;
+import com.shantoo.rxandroid.RxAndroid;
 import com.shantoo.rxandroid.common.utils.UIUtil;
 
 /**
@@ -113,14 +114,14 @@ public class WidgetBar extends Toolbar {
     private void initView() {
 
         if (root == null) {
-            mInflater = LayoutInflater.from(getContext());
+            mInflater = LayoutInflater.from(RxAndroid.getContext());
             root = mInflater.inflate(R.layout.widget_toolbar, null);
             LayoutParams lp = new LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT, Gravity.CENTER);
             addView(root, lp);
         }
 
-        mNavigationIcon = (ImageView) root.findViewById(R.id.m_navigation_icon);
-        mNavigationText = (TextView) root.findViewById(R.id.m_navigation_text);
+        mNavigationIcon = (ImageView) root.findViewById(R.id.rx_navigation_icon);
+        mNavigationText = (TextView) root.findViewById(R.id.rx_navigation_text);
 
         mTitle = (TextView) root.findViewById(R.id.toolbar_title);
         mSearchView = (EditText) root.findViewById(R.id.toolbar_search_view);
